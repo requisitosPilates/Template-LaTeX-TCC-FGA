@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.3 }
+\abntbstabout{v-1.9.6 }
 
 \bibitem[Arruda 2007]{arruda2007}
 \abntrefinfo{Arruda}{ARRUDA}{2007}
@@ -17,13 +17,6 @@ Dispon{\'\i}vel em: \url{http://bu.ufsc.br/framerefer.html}.}
 {ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
   Informa{\c c}\~ao e documenta{\c c}\~ao --- referências.
 Rio de Janeiro, 2000.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
-\abntrefinfo{ABNT}{ABNT}{2011}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
-  apresenta{\c c}\~ao.
-Rio de Janeiro, 2011. 15~p.}
 
 \bibitem[Bordalo, Ferziger e Kline 1989]{bordalo1989}
 \abntrefinfo{Bordalo, Ferziger e Kline}{BORDALO; FERZIGER; KLINE}{1989}
