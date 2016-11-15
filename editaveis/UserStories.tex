@@ -116,16 +116,9 @@ reposição de aula.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item Indicar a data da aula que está sendo reposta.
-    \end{itemize}
-\end{quote}
-
-
-\begin{quote}
-Critérios de Aceitação:
-    \begin{itemize}
         \item Ao selecionar a aula de algum aluno, deve ser possível criar uma nova aula,
-        que será aula de reposição, transformando a aula atual em aula cancelada.
+        que será aula de reposição, transformando a aula atual em aula cancelada;
+        \item Indicar a data da aula que está sendo reposta.
     \end{itemize}
 \end{quote}
 
@@ -183,23 +176,46 @@ Eu como usuário administrador quero alterar o horário de aula de um aluno no
 mesmo dia.
 
 \subsection[Adicionar Plano de Contrato ao Aluno]{Adicionar Plano de Contrato ao Aluno}
-*Eu como usuário administrador quero associar um aluno ao plano de contrato feito
-com o mesmo: com as informações do plano (quantidade de vezes na semana,
-mensalidade, período de meses e desconto) além do início, fim e forma de
-pagamento (dinheiro ou cheque) explicitando o dia, mês, banco e número dos
-cheques.
+Eu como usuário administrador quero associar um plano de contrato a um aluno.
+
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve permitir a adição de um plano de contrato ao aluno com as informações do plano (quantidade de vezes na semana, mensalidade, período de meses e desconto) além do início, fim e forma de pagamento (dinheiro ou cheque) explicitando o dia, mês, banco e número dos cheques.
+    \end{itemize}
+\end{quote} 
 
 \subsection[Renovar Plano de Aluno]{Renovar Plano de Aluno}
-*Eu como usuário administrador quero renovar plano de aluno ao fim do
-contrato do mesmo.
+Eu como usuário administrador quero renovar o plano de contrato de aluno ao fim do contrato do mesmo.
+
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve permitir a adição de um novo plano de contrato (pode ser igual ao anterior) ao aluno com as informações do plano (quantidade de vezes na semana, mensalidade, período de meses e desconto) além do início, fim e forma de pagamento (dinheiro ou cheque) explicitando o dia, mês, banco e número dos cheques.
+    \end{itemize}
+\end{quote}
 
 \subsection[Visualizar Vencimento de Plano de Aluno]{Visualizar Vencimento de Plano de Aluno}
-*Eu como usuário administrador quero visualizar quando o plano de determinado
+Eu como usuário administrador quero visualizar quando o plano de determinado
 aluno irá vencer.
 
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve permitir a visualização da data de vencimento do plano de contrato de um aluno previamente selecionado.
+    \end{itemize}
+\end{quote}
+
 \subsection[Gerar Relatório Mensal com o Vencimentos Planos]{Gerar Relatório Mensal com o Vencimentos Planos}
-*Eu como usuário administrador quero gerar um relatório mensal onde seja possível
+Eu como usuário administrador quero gerar um relatório mensal onde seja possível
 saber quais planos referentes a quais alunos devem vencer no mês.
+
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve gerar uma lista com as datas e os nomes dos alunos que terão os planos vencidos no mês previamente selecionado.
+    \end{itemize}
+\end{quote}
 
 \subsection[Enviar Notificações de Vencimento para o Aluno]{Enviar Notificações de Vencimento para o Aluno}
 Eu como usuário administrador quero que sejam enviadas notificações aos alunos,
@@ -210,12 +226,25 @@ Eu como usuário administrador quero gerar um relatório mensal onde eu posso me
 certificar dos alunos ainda ativos no sistema.
 
 \subsection[Cancelar Plano de Contrato de Aluno]{Cancelar Plano de Contrato de Aluno}
-*Eu como usuário administrador quero cancelar o plano de contrato de um aluno,
+Eu como usuário administrador quero cancelar o plano de contrato de um aluno,
  ou seja, fazer a recisão do mesmo.
 
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve permitir o cancelamento de um plano de aluno e inativar o mesmo.
+    \end{itemize}
+\end{quote} 
+
 \subsection[Alterar Plano]{Alterar Plano}
-*Eu como usuário administrador quero mudar o plano de um aluno, seja na
-quantidade de vezes por semana ou no período do plano.
+Eu como usuário administrador do sistema eu desejo cancelar o plano de um aluno e adicionar outro.
+
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve permitir a mudança do plano de um aluno, seja na quantidade de vezes por semana ou no período do plano.
+    \end{itemize}
+\end{quote} 
 
 \subsection[Cadastrar Aluno]{Cadastrar Aluno}
 Eu como usuário administrador quero cadastrar novos alunos no sistema.
@@ -255,12 +284,26 @@ Critérios de Aceitação:
 \end{quote}
 
 \subsection[Visualizar Perfil de Aluno]{Visualizar Perfil de Aluno}
-*Eu como usuário administrador quero visualizar o perfil do aluno que contém suas
+Eu como usuário administrador quero visualizar o perfil do aluno que contém suas
 informações pessoais e plano de contrato.
 
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve permitir a visualização do perfil de um aluno com os dados pessoais e plano(s) contratado(s).
+    \end{itemize}
+\end{quote}
+
 \subsection[Gerar Relatório com os Aniversariantes do Mês]{Gerar Relatório com os Aniversariantes do Mês}
-*Eu como usuário administrador quero visualizar a data de aniversário de todos os
+Eu como usuário administrador quero visualizar a data de aniversário de todos os
 alunos aniversariantes do mês para que possa desejá-los feliz aniversário.
+
+\begin{quote}
+Critérios de Aceitação:
+    \begin{itemize}
+        \item O sistema deve gerar uma lista com as datas e os nomes dos alunos que farão aniversário no mês previamente selecionado.
+    \end{itemize}
+\end{quote}
 
 \subsection[Buscar Alunos no Sistema]{Buscar Alunos no Sistema}
 Eu como usuário administrador quero pesquisar alunos por nome.
