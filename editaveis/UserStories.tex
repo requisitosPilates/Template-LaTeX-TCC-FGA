@@ -181,7 +181,8 @@ Eu como usuário administrador quero associar um plano de contrato a um aluno.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve permitir a adição de um plano de contrato ao aluno com as informações do plano (quantidade de vezes na semana, mensalidade, período de meses e desconto) além do início, fim e forma de pagamento (dinheiro ou cheque) explicitando o dia, mês, banco e número dos cheques.
+        \item O sistema deve permitir com que os contratos sejam relacionados ao cliente. Ao realizar essa ligação, outras informações como Descontos, data de início, deve ser salvas. Posteriormente, essa tabela de ligação estará relacionada a uma segunda tabela de pagamentos. Além disso, o ultimo plano deve ser "ativo" quando criado e os planos anteriores desativados;
+        \item As informações inseridas pelo usuário serão: desconto, data de início e o plano de contrato.
     \end{itemize}
 \end{quote} 
 
@@ -191,7 +192,7 @@ Eu como usuário administrador quero renovar o plano de contrato de aluno ao fim
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve permitir a adição de um novo plano de contrato (pode ser igual ao anterior) ao aluno com as informações do plano (quantidade de vezes na semana, mensalidade, período de meses e desconto) além do início, fim e forma de pagamento (dinheiro ou cheque) explicitando o dia, mês, banco e número dos cheques.
+        \item O sistema deve permitir a renovação do plano de um aluno.  Os contratos renovados devem possuir todos os atributos iguais exceto a data de início do contrato, que deve ser o dia atual.
     \end{itemize}
 \end{quote}
 
@@ -202,7 +203,7 @@ aluno irá vencer.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve permitir a visualização da data de vencimento do plano de contrato de um aluno previamente selecionado.
+        \item Ao verificar os planos de contrato de um aluno, o sistema deve informar que dia é o vencimento do plano. Caso o plano já tenha vencido ou seja inexistente, essa informação deve ser mostrada ao usuário.
     \end{itemize}
 \end{quote}
 
@@ -213,7 +214,7 @@ saber quais planos referentes a quais alunos devem vencer no mês.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve gerar uma lista com as datas e os nomes dos alunos que terão os planos vencidos no mês previamente selecionado.
+        \item O usuário seleciona qual mês e ano deseja consultar os planos que vencerão. Após essa seleção o sistema deve retornar como resultado quais planos dos clientes vencerão no mês e ano selecionado. A opção padrão deve ser a do mês e ano atual.
     \end{itemize}
 \end{quote}
 
@@ -232,7 +233,7 @@ Eu como usuário administrador quero cancelar o plano de contrato de um aluno,
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve permitir o cancelamento de um plano de aluno e inativar o mesmo.
+        \item O sistema deve permitir o cancelamento do plano de um aluno. Após cancelar o contrato, deve noticiar o usuário que essa operação foi realizada. Os contratos cancelados devem continuar salvos no banco de dados.
     \end{itemize}
 \end{quote} 
 
@@ -252,9 +253,7 @@ Eu como usuário administrador quero cadastrar novos alunos no sistema.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve permitir o cadastro de clientes com os dados: nome, profissão,
-        data de nascimento, endereço, CEP, telefone residencial, celular, e-mail, CPF,
-        RG e status.
+        \item O sistema deve permitir o cadastro de clientes com os dados: nome, profissão, data de nascimento, endereço, CEP, telefone residencial, celular, e-mail, CPF, RG e status.
     \end{itemize}
 \end{quote}
 
@@ -290,7 +289,8 @@ informações pessoais e plano de contrato.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve permitir a visualização do perfil de um aluno com os dados pessoais e plano(s) contratado(s).
+        \item O sistema deve mostrar os dados do cliente: nome, profissão, data de nascimento, endereço, CEP, telefone residencial, celular, e-mail, CPF, RG e status;
+        \item O sistema deve mostrar as informações referentes ao plano do cliente ativo no momento (Início do contrato, duração,  custo e descrição). Caso nenhum plano esteja ativo ou esse cliente não esteja associado a um contrato, deve ser mostrado na tela "Contrato vencido ou inexistente."
     \end{itemize}
 \end{quote}
 
@@ -301,7 +301,7 @@ alunos aniversariantes do mês para que possa desejá-los feliz aniversário.
 \begin{quote}
 Critérios de Aceitação:
     \begin{itemize}
-        \item O sistema deve gerar uma lista com as datas e os nomes dos alunos que farão aniversário no mês previamente selecionado.
+        \item O usuário seleciona qual mês deseja consultar os aniversariante. Após essa seleção o sistema deve retornar como resultado com os clientes aniversariantes do mês selecionado. A opção padrão deve ser a do mês atual.
     \end{itemize}
 \end{quote}
 
